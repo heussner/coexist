@@ -166,3 +166,12 @@ def ids_to_table(ids, table):
     new_table = df1.reindex(ids) # set new table in correct order
     new_table.reset_index(inplace=True)
     return new_table
+
+def kNN(table):
+    return graph
+
+def cluster(table):
+    return labels
+    
+def propagate_labels(graph, table):
+    return labels
