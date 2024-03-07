@@ -4,8 +4,6 @@ from scipy.stats import zscore, spearmanr
 from scipy.optimize import linear_sum_assignment
 from . import utils
 
-
-
 class Match:
   """
   Main object
@@ -37,6 +35,8 @@ class Match:
     assert method in {'correlation', 'overlap', 'linear_assignment'}
     self.method = method
 
+    self.im1_count = len(self.arr1)
+    self.im2_count = len(self.arr2)
     self.im1_cells = None
     self.im2_cells = None
     self.arr1_shared = None
@@ -46,13 +46,17 @@ class Match:
 
     self.im1_cellIDs = list(self.arr1[self.cellID_label])
     self.im2_cellIDs = list(self.arr2[self.cellID_label])
-    
-    if self.shared_markers:
-      arr1_shared = self.arr1[self.shared_markers]
-      arr2_shared = self.arr2[self.shared_markers]
-      self.arr1_shared = np.array(zscore(arr1_shared, axis=0))
-      self.arr2_shared = np.array(zscore(arr2_shared, axis=0))
-      self.pairwise_distances = 1 - spearmanr(self.arr1_shared, self.arr2_shared)[0][]
+
+    def preprocess(self):
+      if self.shared_markers:
+        arr1_shared = self.arr1[self.shared_markers]
+        arr2_shared = self.arr2[self.shared_markers]
+        self.arr1_shared = np.array(zscore(arr1_shared, axis=0))
+        self.arr2_shared = np.array(zscore(arr2_shared, axis=0))
+        self.pairwise_distances = 1 - spearmanr(self.arr1_shared, self.arr2_shared)[0][0:self.arr1_count,self.arr1_count:self.arr1_count+self.arr2_count]
+      else:
+        self.method = 'overlap'
+      return None
 
     def graph(self):
       print('Making kNN graphs')
@@ -67,7 +71,7 @@ class Match:
         match_table = utils.track_cells(self.im1_mask, self.im2_mask)
       print('Removing low quality matches...')
       match_table = match_table[match_table['score']<0]
-      print(f'Matched {len(match_table)} cells of {len(self.arr1)} slide 1 cells and {len(self.arr2)} slide 2 cells')
+      print(f'Matched {len(match_table)} cells of {self.im1_count} slide 1 cells and {self.im2_count} slide 2 cells, approximately {len(match_table)*200/(self.im1_count+self.im2_count)} % shared.')
       self.arr1_matched = utils.ids_to_table(match_table['slide_1_cells'], self.arr1)
       self.arr2_matched = utils.ids_to_table(match_table['slide_2_cells'], self.arr2)
       return None
