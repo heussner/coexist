@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import zscore, spearmanr
 from scipy.optimize import linear_sum_assignment
-from . import register, segment, utils, cluster
+from . import utils
 
 
 
