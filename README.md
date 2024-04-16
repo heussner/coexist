@@ -1,2 +1,1 @@
-# serial-MTI-integration
-# test commit
+# Coexist: Coordinated single-cell integration of serial multiplexed tissue images
