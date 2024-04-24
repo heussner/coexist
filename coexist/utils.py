@@ -162,7 +162,7 @@ def linear_assignment(cellID1, cellID2, cost_matrix, distance_matrix, max_distan
         match_table = pd.DataFrame(data={'im1_cellID':[cellID1[c] for c in cols], 'im2_cellID': cellID2, 'score':scores})
     return match_table
 
-def ids_to_table(cellIDs, table):
+def ids_to_table(cellIDs, table, key):
     """
     Description:
         - DataFrame from list of cellIDs and original cell-feature table
@@ -172,8 +172,8 @@ def ids_to_table(cellIDs, table):
     Return:
         - new_table: pd.DataFrame, ordered cell-feature table of cellIDs
     """
-    new_table = table[table['cellID'].isin(cellIDs)] # get relevant rows
-    df1 = new_table.set_index('cellID')
+    new_table = table[table[key].isin(cellIDs)] # get relevant rows
+    df1 = new_table.set_index(key)
     new_table = df1.reindex(cellIDs) # set new table in correct order
     new_table.reset_index(inplace=True)
     return new_table
