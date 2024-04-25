@@ -1,2 +1,0 @@
-Scripts:
-- run_cyclic_consistency.py: Runs cycle consistency (matching tracked slide 2 cells to all slide 1 cells, and vice-versa, and then checking the number of matches that are the same). Saves output to cyclic.pkl
