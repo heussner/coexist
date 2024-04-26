@@ -1,3 +1,5 @@
+<img align="left" width="80" height="80" src="assets/coexist.png" alt="icon">
+
 # Coexist: Coordinated single-cell integration of serial multiplexed tissue images
 ![](assets/Figure1.png)
 
