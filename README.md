@@ -1,6 +1,6 @@
 <img align="left" width="80" height="80" src="assets/coexist.png" alt="icon">
 
-# Coexist: Coordinated single-cell integration of serial multiplexed tissue images
+# COEXIST: Coordinated single-cell integration of serial multiplexed tissue images
 
 ## Setup:
 1. git clone https://github.com/heussner/coexist.git
