@@ -2,7 +2,7 @@
 
 # COEXIST: Coordinated single-cell integration of serial multiplexed tissue images
 
-## Setup:
+## Setup
 ```
 git clone https://github.com/heussner/coexist.git
 conda create -n 'coexist' -python=3.8
@@ -10,11 +10,11 @@ conda activate coexist
 pip install -r requirements.txt
 ```
 
-## Usage:
+## Usage
 See ```examples/spatial_profiling.ipynb``` to see how to use COEXIST to spatially profile tissues.
 
 See ```examples/cross_platform_comparison.ipynb``` to see how to use COEXIST to compare MTI platforms.
 
-## Acknowledgements:
+## Acknowledgements
 
-## Citation:
+## Citation
