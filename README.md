@@ -11,9 +11,9 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-See ```examples/spatial_profiling.ipynb``` to see how to use COEXIST to spatially profile tissues.
+```examples/spatial_profiling.ipynb``` shows how to use COEXIST to spatially profile tissues.
 
-See ```examples/cross_platform_comparison.ipynb``` to see how to use COEXIST to compare MTI platforms.
+```examples/cross_platform_comparison.ipynb``` shows how to use COEXIST to compare MTI platforms.
 
 ## Acknowledgements
 
