@@ -59,6 +59,7 @@ class COEXIST:
         self.df1_matched = None
         self.df2_matched = None
         self.cost_matrix = None
+        self.match_book = None
         self.df1_count = len(self.df1)
         self.df2_count = len(self.df2)
         
