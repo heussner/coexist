@@ -2,7 +2,12 @@ import numpy as np
 import pandas as pd
 from scipy.stats import zscore, spearmanr
 from sklearn.metrics import pairwise_distances
-from . import utils
+import sys
+sys.path.append("../coexist")
+from coexist.utilslib import utils
+
+
+### 
 
 class COEXIST:
     """
@@ -61,6 +66,11 @@ class COEXIST:
         self.cost_matrix = None
         self.df1_count = len(self.df1)
         self.df2_count = len(self.df2)
+
+        self.df1_labels = None
+        self.df2_labels = None
+        self.df1_superlabels = None
+        self.df2_superlabels = None
         
         for m1,m2 in shared_markers.items():
             self.df1_shared_markers.append(m1)
@@ -139,24 +149,101 @@ class COEXIST:
             print(f'{m1}/{m2}: {np.round(corr[0],2)}')
         return None
 
-    def graph_data(self):
-        """
-        Description:
-            Make kNN graphs for MTIs 1 and 2
-        """
-        print('Making kNN graphs')
-        self.arr1_graph = None
-        self.arr2_graph = None
 
-    def cluster_cells(self):
+    def cluster_cells(self, n_neighbors: int = 100, ignore_cols: list = [], apply_normalization = True, remove_outliers = True, cluster_each_panel = False):
         """
         Description:
             Cluster matched cells and propagate labels to the unmatched cells
+        Parameters:
+            n_neighbors: int, grapheno clustering parameter 
+            ignore_cols: list, list of column name strings to exclude during clustering and label propagation
+            apply_normalization: bool, if user wants to perform normalization prior to clustering.
+            cluster_each_panel: bool, if user wants to also gather labels from each clustering on each panel independently, returns self.df1_labels and self.df2_labels
+                                if False, user only obtains the superplexed labels as self.df1_superlabels and self.df2_superlabels
         """
+        # import torch
+
+        # assert torch.cuda.is_available(), "Clustering requires CUDA device, None available!"
+
+        if self.cellID_key not in ignore_cols:
+            ignore_cols = ignore_cols + [self.cellID_key] #ignore the cellID key when clustering
+        
+        #Each dataframe should be processed to improve clustering
+        if apply_normalization:
+            print("Applying normalization")
+            self.df1_norm, self.df2_norm, self.df1_matched_norm, self.df2_matched_norm = utils.normalize_marker_signals(panel_A = self.df1.copy(),
+                                                                                                    panel_B = self.df2.copy(),
+                                                                                                    panel_A_tracked = self.df1_matched.copy(),
+                                                                                                    panel_B_tracked = self.df2_matched.copy(),
+                                                                                                    ignore_cols = ignore_cols,
+                                                                                                    remove_outliers = remove_outliers,
+                                                                                                    log_transform = True)
+        else:
+             self.df1_norm, self.df2_norm, self.df1_matched_norm, self.df2_matched_norm = self.df1.copy(), self.df2.copy(), self.df1_matched.copy(), self.df2_matched.copy()
+
+        if cluster_each_panel:
+            print("Clustering first panel")
+            df = utils.gpu_cluster(dataframe = self.df1_norm.copy(),
+                                        n_neighbors = n_neighbors,
+                                        ignore_cols = ignore_cols,
+                                        cluster_name = "cluster")
+            
+            self.df1_labels = df.set_index(self.cellID_key)['cluster'].copy()
+            self.df1_labels.index.name = self.cellID_key
+
+            print("Clustering second panel")
+            df = utils.gpu_cluster(dataframe = self.df2_norm.copy(),
+                                        n_neighbors = n_neighbors,
+                                        ignore_cols = ignore_cols,
+                                        cluster_name = "cluster")
+
+            self.df2_labels = df.set_index(self.cellID_key)['cluster'].copy()
+            self.df2_labels.index.name = self.cellID_key
+
+            if 'cluster' not in ignore_cols:
+                ignore_cols = ignore_cols + ['cluster'] #the new cluster label should NOT be part of the subsequent clustering when merging the dataframes
+
         print('Clustering matched cells')
-        self.matched_labels = None
+        #apply clustering to matched cells, then propogate those labels
+        """
+        The indices of df1_matched and df2_matched do not match, 
+        but they are 1:1 meaning the indices correspond to their 
+        index in each panel but the first row of each dataframe 
+        are the same cell.
+        """
+        #rename the markers for each panel since there may be overlap
+        merged_matched = pd.merge(self.df1_matched_norm.rename(columns={x:"panelA_{}".format(x) for x in self.df1_matched_norm.columns}),
+                                    self.df2_matched_norm.rename(columns={x:"panelB_{}".format(x) for x in self.df2_matched_norm.columns}), 
+                                    left_index=True, right_index=True, how='outer')
+        
+        #cluster the merged dataframe
+        merged_matched = utils.gpu_cluster(dataframe = merged_matched,
+                                            n_neighbors = n_neighbors,
+                                            ignore_cols = ["{}_{}".format(x,y) for x in ['panelA', 'panelB'] for y in ignore_cols],
+                                            cluster_name = "combined_cluster")
+        
+        if 'combined_cluster' not in ignore_cols:
+            ignore_cols = ignore_cols + ['combined_cluster'] #the new cluster label should NOT be part of the subsequent label propagation when merging the dataframes
+
+        #write the clusters to variables
+        self.df1_matched_labels = merged_matched[['panelA_{}'.format(self.cellID_key),  'combined_cluster']].rename(columns={'panelA_{}'.format(self.cellID_key):self.cellID_key})
+        self.df1_matched_labels.set_index(self.cellID_key, inplace=True)
+        self.df1_matched_labels.index.name = self.cellID_key
+        self.df2_matched_labels = merged_matched[['panelB_{}'.format(self.cellID_key),  'combined_cluster']].rename(columns={'panelB_{}'.format(self.cellID_key):self.cellID_key})
+        self.df2_matched_labels.set_index(self.cellID_key, inplace=True)
+        self.df2_matched_labels.index.name = self.cellID_key
+
         print('Propagating labels to unmatched cells')
-        self.arr1_labels = None
-        self.arr2_labels = None
-        return None
+        #The passed dataframe and the passed tracked_labels MUST have the same index key.
+        self.df1_superlabels = utils.propagate_labels(self.df1_norm.set_index(self.cellID_key).copy(), 
+                                                      tracked_labels = self.df1_matched_labels.copy(), 
+                                                      ignore_cols = ignore_cols)
+        self.df1_superlabels.index.name = self.cellID_key
+
+        self.df2_superlabels = utils.propagate_labels(self.df2_norm.set_index(self.cellID_key).copy(), 
+                                                      tracked_labels = self.df2_matched_labels.copy(),
+                                                      ignore_cols = ignore_cols)
+        self.df1_superlabels.index.name = self.cellID_key
+        print('Complete!')
+
       
