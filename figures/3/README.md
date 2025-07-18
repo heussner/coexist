@@ -1,97 +1,53 @@
-## Code and data for reproducing Figure 3 
+## Code and data for reproducing Figure 3
 
-- All Jupyter notebooks were executed in `figures/3/envs/scanpy.yml`
-- All R scripts were executed in `figures/3/envs/rviz.yml`
+### Fig 3B & C Leiden clustering and UMAP plots
 
-### Fig 3A
+![](images/Figure_3B_umap.png)
 
-![](images/Figure_3A.png)
-
-*Description*
-
-Alluvial plot of broad cell types called on tracked cells from all breast cancer and normal breast cores in the tissue microarray 
-
-*Notebooks/scripts*
-
-    1. Figure_3A.R
-
-### Fig 3B
-
-![](images/Figure_3B.png)
+![](images/Figure_3C_umap.png)
 
 *Description*
 
-Alluvial plot of refined cell types called on tracked cells from core E06 
+Tonsil and CRC feature tables (available via HTAN portal and Synapse) Leiden clustering into ground-truth clusters for panel simulation
 
 *Notebooks/scripts*
 
-1. `notebooks/E06_leiden_clustering.ipynb`
-2. `notebooks/E06_prep_alluvial.ipynb`  
-3. `scripts/Figure_3B.R`
+    1. Figure_3BC_umaps.ipynb
 
-*Notes*
-
-- Notebook 1 runs Leiden clustering (via Scanpy) on core E06 to generate refined cell type annotations. For clustering of more than one sample, it is recommended to use Grapheno clustering demonstrated in `examples/clustering_example.ipynb`
-- Cell type annotations of Leiden clusters assigned in Notebook 1 are found under `figures/3/annotations` and are used throughout subsequent figures 
-- Notebook 2 converts data files with Leiden cluster annotations (Example: `data/E06_immune_indiv_leiden.csv`) into a counts matrix that can be read into `ggalluvial` to create the figure 
-- Script 3 takes the counts matrix and generates the alluvial diagram 
-
-### Fig 3C
-
-![](images/Figure_3C.png)
+### Running the simulation
 
 *Description*
 
-Annotated heatmap of refined cell types called on tracked cells from core E06 
+Python script for performing the simulation. Run panel_simulation.py --help for params. See docstrings for more. Run on GPU with cuml implementation of KNN
 
 *Notebooks/scripts*
 
-- `notebooks/Figure_3C.ipynb`
+    1. panel_simulation.py
 
-*Notes*
-    
-- Takes output of `notebooks/E06_leiden_clustering.ipynb` to create heatmap. For convenience, intermediate files are provided (Example: `data/E06_immune_indiv_leiden.csv`)
+### Fig 3B & C scatterplots
 
-### Fig 3D
+![](images/Figure_3B_scatter.png)
+
+![](images/Figure_3C_scatter.png)
+
+*Description*
+
+Spatial scatterplots of ground-truth clusters in tonsil and CRC tissues
+
+*Notebooks/scripts*
+
+1. Figure_3BC_scatters.ipynb
+
+### Fig 3D & E
 
 ![](images/Figure_3D.png)
-
-*Description*
-
-Visual comparison of the cell phenotypes mapped to their spatial locations in the TNBC core adjacent sections (columns) before (top row) and after (bottom row) integrating them with COEXIST
-
-*Notebooks/scripts*
-
-- `notebooks/Figure_3D.ipynb`
-
-*Notes*
-
-- Here, cell labels were propagated to untracked cells on core E06 only. For larger scale propagations, see `propagate_labels()` function in `coexist/utilslib/utils.py` for a GPU implementation. 
-
-### Fig 3E
 
 ![](images/Figure_3E.png)
 
 *Description*
 
-Recurrent neighborhood analysis heatmap showing cell composition per neighborhood and each neighborhood’s frequency in both sections.
+Evaluation metrics for panel simulation against ground truth clusters
 
 *Notebooks/scripts*
 
-- `notebooks/Figure_3E_3F.ipynb`
-
-### Fig 3F
-
-![](images/Figure_3F.png)
-
-*Description*
-
-Case study of RCN 7 from (C) showing image channels corresponding to RCN 7’s markers in both slides (top row) and the presence of RCN 7 after applying COEXIST (bottom row)
-
-*Notebooks/scripts*
-
-- `notebooks/Figure_3E_3F.ipynb`
-
-*Notes*
-
-Top half of Figure 3F is a visualization of the actual corresponding image data. 
+- Figure_3D_3E.ipynb

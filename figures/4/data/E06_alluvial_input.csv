@@ -1,0 +1,631 @@
+,subject,frequency,panel,cell_type
+0,0,606,Tumor,Epithelial
+1,1,561,Tumor,Basal Epithelial
+2,2,355,Tumor,Proliferative Epithelial
+3,3,331,Tumor,Proliferative Basal Epithelial
+4,4,328,Tumor,Basal Epithelial
+5,5,299,Tumor,aSMA+ Stroma
+6,6,210,Tumor,Endothelial
+7,7,190,Tumor,Proliferative Basal Epithelial
+8,8,169,Tumor,T-cells
+9,9,138,Tumor,aSMA+ Stroma
+10,10,132,Tumor,Endothelial
+11,11,127,Tumor,Proliferative Basal Epithelial
+12,12,118,Tumor,Proliferative Basal Epithelial
+13,13,111,Tumor,Proliferative Epithelial
+14,14,98,Tumor,aSMA+ Stroma
+15,15,94,Tumor,Proliferative Basal Epithelial
+16,16,94,Tumor,Endothelial
+17,17,94,Tumor,Endothelial
+18,18,91,Tumor,aSMA+ Stroma
+19,19,87,Tumor,aSMA+ Stroma
+20,20,80,Tumor,Proliferative Epithelial
+21,21,73,Tumor,Endothelial
+22,22,67,Tumor,aSMA+ Stroma
+23,23,63,Tumor,T-cells
+24,24,61,Tumor,Basal Epithelial
+25,25,61,Tumor,Proliferative Epithelial
+26,26,55,Tumor,Epithelial
+27,27,52,Tumor,Proliferative Epithelial
+28,28,48,Tumor,Proliferative Epithelial
+29,29,48,Tumor,aSMA+ Stroma
+30,30,47,Tumor,aSMA+ Stroma
+31,31,44,Tumor,Proliferative Epithelial
+32,32,43,Tumor,Epithelial
+33,33,41,Tumor,T-cells
+34,34,37,Tumor,Endothelial
+35,35,36,Tumor,aSMA+ Stroma
+36,36,34,Tumor,T-cells
+37,37,32,Tumor,T-cells
+38,38,31,Tumor,aSMA+ Stroma
+39,39,28,Tumor,Epithelial
+40,40,28,Tumor,Endothelial
+41,41,27,Tumor,Endothelial
+42,42,25,Tumor,T-cells
+43,43,24,Tumor,Endothelial
+44,44,23,Tumor,Basal Epithelial
+45,45,22,Tumor,Endothelial
+46,46,22,Tumor,Basal Epithelial
+47,47,21,Tumor,Epithelial
+48,48,21,Tumor,aSMA+ Stroma
+49,49,21,Tumor,aSMA+ Stroma
+50,50,21,Tumor,Proliferative Basal Epithelial
+51,51,19,Tumor,Epithelial
+52,52,19,Tumor,Basal Epithelial
+53,53,18,Tumor,Epithelial
+54,54,18,Tumor,aSMA+ Stroma
+55,55,17,Tumor,T-cells
+56,56,16,Tumor,aSMA+ Stroma
+57,57,16,Tumor,Basal Epithelial
+58,58,15,Tumor,Proliferative Epithelial
+59,59,15,Tumor,Myoepithelial
+60,60,15,Tumor,aSMA+ Stroma
+61,61,15,Tumor,T-cells
+62,62,15,Tumor,T-cells
+63,63,14,Tumor,Basal Epithelial
+64,64,13,Tumor,T-cells
+65,65,12,Tumor,Endothelial
+66,66,12,Tumor,Epithelial
+67,67,11,Tumor,aSMA+ Stroma
+68,68,11,Tumor,aSMA+ Stroma
+69,69,11,Tumor,Proliferative Epithelial
+70,70,10,Tumor,Proliferative Basal Epithelial
+71,71,10,Tumor,T-cells
+72,72,10,Tumor,Epithelial
+73,73,9,Tumor,Endothelial
+74,74,9,Tumor,Proliferative Epithelial
+75,75,9,Tumor,Proliferative Epithelial
+76,76,9,Tumor,Endothelial
+77,77,8,Tumor,Proliferative Epithelial
+78,78,7,Tumor,T-cells
+79,79,7,Tumor,Basal Epithelial
+80,80,7,Tumor,Endothelial
+81,81,7,Tumor,Endothelial
+82,82,7,Tumor,Endothelial
+83,83,6,Tumor,Endothelial
+84,84,6,Tumor,Endothelial
+85,85,6,Tumor,Proliferative Epithelial
+86,86,6,Tumor,aSMA+ Stroma
+87,87,6,Tumor,Proliferative Epithelial
+88,88,6,Tumor,Proliferative Epithelial
+89,89,6,Tumor,aSMA+ Stroma
+90,90,5,Tumor,Basal Epithelial
+91,91,5,Tumor,T-cells
+92,92,5,Tumor,T-cells
+93,93,5,Tumor,Proliferative Epithelial
+94,94,5,Tumor,Epithelial
+95,95,5,Tumor,Basal Epithelial
+96,96,5,Tumor,Endothelial
+97,97,5,Tumor,aSMA+ Stroma
+98,98,5,Tumor,Proliferative Basal Epithelial
+99,99,5,Tumor,Basal Epithelial
+100,100,4,Tumor,Endothelial
+101,101,4,Tumor,Endothelial
+102,102,4,Tumor,Proliferative Epithelial
+103,103,4,Tumor,T-cells
+104,104,4,Tumor,Endothelial
+105,105,4,Tumor,T-cells
+106,106,4,Tumor,aSMA+ Stroma
+107,107,4,Tumor,aSMA+ Stroma
+108,108,4,Tumor,Endothelial
+109,109,4,Tumor,Endothelial
+110,110,3,Tumor,aSMA+ Stroma
+111,111,3,Tumor,Proliferative Epithelial
+112,112,3,Tumor,T-cells
+113,113,3,Tumor,T-cells
+114,114,3,Tumor,T-cells
+115,115,3,Tumor,Endothelial
+116,116,3,Tumor,Basal Epithelial
+117,117,3,Tumor,Endothelial
+118,118,3,Tumor,aSMA+ Stroma
+119,119,3,Tumor,Proliferative Basal Epithelial
+120,120,3,Tumor,aSMA+ Stroma
+121,121,3,Tumor,Basal Epithelial
+122,122,3,Tumor,Proliferative Epithelial
+123,123,3,Tumor,Proliferative Epithelial
+124,124,3,Tumor,Epithelial
+125,125,2,Tumor,T-cells
+126,126,2,Tumor,aSMA+ Stroma
+127,127,2,Tumor,Endothelial
+128,128,2,Tumor,aSMA+ Stroma
+129,129,2,Tumor,aSMA+ Stroma
+130,130,2,Tumor,Basal Epithelial
+131,131,2,Tumor,aSMA+ Stroma
+132,132,2,Tumor,T-cells
+133,133,2,Tumor,T-cells
+134,134,2,Tumor,aSMA+ Stroma
+135,135,2,Tumor,aSMA+ Stroma
+136,136,2,Tumor,aSMA+ Stroma
+137,137,2,Tumor,aSMA+ Stroma
+138,138,2,Tumor,aSMA+ Stroma
+139,139,2,Tumor,aSMA+ Stroma
+140,140,2,Tumor,aSMA+ Stroma
+141,141,2,Tumor,Endothelial
+142,142,2,Tumor,T-cells
+143,143,2,Tumor,Proliferative Basal Epithelial
+144,144,2,Tumor,Proliferative Basal Epithelial
+145,145,2,Tumor,Proliferative Epithelial
+146,146,2,Tumor,Proliferative Epithelial
+147,147,2,Tumor,Epithelial
+148,148,2,Tumor,T-cells
+149,149,2,Tumor,T-cells
+150,150,2,Tumor,Proliferative Basal Epithelial
+151,151,2,Tumor,T-cells
+152,152,2,Tumor,Endothelial
+153,153,2,Tumor,Proliferative Epithelial
+154,154,1,Tumor,Basal Epithelial
+155,155,1,Tumor,aSMA+ Stroma
+156,156,1,Tumor,Epithelial
+157,157,1,Tumor,Proliferative Epithelial
+158,158,1,Tumor,Proliferative Epithelial
+159,159,1,Tumor,Proliferative Epithelial
+160,160,1,Tumor,Basal Epithelial
+161,161,1,Tumor,Epithelial
+162,162,1,Tumor,Epithelial
+163,163,1,Tumor,aSMA+ Stroma
+164,164,1,Tumor,aSMA+ Stroma
+165,165,1,Tumor,Epithelial
+166,166,1,Tumor,aSMA+ Stroma
+167,167,1,Tumor,Epithelial
+168,168,1,Tumor,aSMA+ Stroma
+169,169,1,Tumor,aSMA+ Stroma
+170,170,1,Tumor,aSMA+ Stroma
+171,171,1,Tumor,Basal Epithelial
+172,172,1,Tumor,aSMA+ Stroma
+173,173,1,Tumor,Epithelial
+174,174,1,Tumor,Epithelial
+175,175,1,Tumor,Epithelial
+176,176,1,Tumor,Basal Epithelial
+177,177,1,Tumor,Myoepithelial
+178,178,1,Tumor,Basal Epithelial
+179,179,1,Tumor,Proliferative Epithelial
+180,180,1,Tumor,Endothelial
+181,181,1,Tumor,aSMA+ Stroma
+182,182,1,Tumor,Myoepithelial
+183,183,1,Tumor,T-cells
+184,184,1,Tumor,T-cells
+185,185,1,Tumor,Endothelial
+186,186,1,Tumor,T-cells
+187,187,1,Tumor,T-cells
+188,188,1,Tumor,Endothelial
+189,189,1,Tumor,T-cells
+190,190,1,Tumor,T-cells
+191,191,1,Tumor,Endothelial
+192,192,1,Tumor,Endothelial
+193,193,1,Tumor,Proliferative Epithelial
+194,194,1,Tumor,Proliferative Epithelial
+195,195,1,Tumor,Proliferative Epithelial
+196,196,1,Tumor,aSMA+ Stroma
+197,197,1,Tumor,Proliferative Epithelial
+198,198,1,Tumor,Proliferative Epithelial
+199,199,1,Tumor,Proliferative Epithelial
+200,200,1,Tumor,aSMA+ Stroma
+201,201,1,Tumor,Basal Epithelial
+202,202,1,Tumor,aSMA+ Stroma
+203,203,1,Tumor,Endothelial
+204,204,1,Tumor,Proliferative Epithelial
+205,205,1,Tumor,Endothelial
+206,206,1,Tumor,Proliferative Epithelial
+207,207,1,Tumor,Endothelial
+208,208,1,Tumor,aSMA+ Stroma
+209,209,1,Tumor,Epithelial
+210,0,606,Combined,Epithelial
+211,1,561,Combined,Basal Epithelial
+212,2,355,Combined,Proliferative Epithelial
+213,3,331,Combined,Proliferative Epithelial
+214,4,328,Combined,Epithelial
+215,5,299,Combined,aSMA+ Stroma
+216,6,210,Combined,Endothelial
+217,7,190,Combined,Epithelial
+218,8,169,Combined,CD8+ T-cells
+219,9,138,Combined,Macrophages
+220,10,132,Combined,CD163+ Macrophages
+221,11,127,Combined,Proliferative Basal Epithelial
+222,12,118,Combined,Proliferative Epithelial
+223,13,111,Combined,Epithelial
+224,14,98,Combined,Epithelial
+225,15,94,Combined,Proliferative Basal Epithelial
+226,16,94,Combined,Endothelial
+227,17,94,Combined,Macrophages
+228,18,91,Combined,CD8+ T-cells
+229,19,87,Combined,Endothelial
+230,20,80,Combined,Proliferative Basal Epithelial
+231,21,73,Combined,Epithelial
+232,22,67,Combined,Macrophages
+233,23,63,Combined,Regulatory T-cells
+234,24,61,Combined,Epithelial
+235,25,61,Combined,Stroma
+236,26,55,Combined,Basal Epithelial
+237,27,52,Combined,Proliferative Basal Epithelial
+238,28,48,Combined,Macrophages
+239,29,48,Combined,Macrophages
+240,30,47,Combined,CD163+ Macrophages
+241,31,44,Combined,Proliferative Epithelial
+242,32,43,Combined,Proliferative Epithelial
+243,33,41,Combined,Regulatory T-cells
+244,34,37,Combined,B-cells
+245,35,36,Combined,Endothelial
+246,36,34,Combined,B-cells
+247,37,32,Combined,aSMA+ Stroma
+248,38,31,Combined,aSMA+ Stroma
+249,39,28,Combined,Proliferative Epithelial
+250,40,28,Combined,CD8+ T-cells
+251,41,27,Combined,CD163+ Macrophages
+252,42,25,Combined,CD163+ Macrophages
+253,43,24,Combined,Endothelial
+254,44,23,Combined,Basal Epithelial
+255,45,22,Combined,CD163+ Macrophages
+256,46,22,Combined,Proliferative Basal Epithelial
+257,47,21,Combined,Epithelial
+258,48,21,Combined,Macrophages
+259,49,21,Combined,Regulatory T-cells
+260,50,21,Combined,Basal Epithelial
+261,51,19,Combined,aSMA+ Stroma
+262,52,19,Combined,Proliferative Epithelial
+263,53,18,Combined,Epithelial
+264,54,18,Combined,Endothelial
+265,55,17,Combined,Macrophages
+266,56,16,Combined,aSMA+ Stroma
+267,57,16,Combined,Epithelial
+268,58,15,Combined,CD8+ T-cells
+269,59,15,Combined,Myoepithelial
+270,60,15,Combined,B-cells
+271,61,15,Combined,Macrophages
+272,62,15,Combined,Regulatory T-cells
+273,63,14,Combined,Proliferative Epithelial
+274,64,13,Combined,Endothelial
+275,65,12,Combined,Epithelial
+276,66,12,Combined,Epithelial
+277,67,11,Combined,Stroma
+278,68,11,Combined,Regulatory T-cells
+279,69,11,Combined,CD163+ Macrophages
+280,70,10,Combined,Epithelial
+281,71,10,Combined,Macrophages
+282,72,10,Combined,Macrophages
+283,73,9,Combined,Macrophages
+284,74,9,Combined,Basal Epithelial
+285,75,9,Combined,aSMA+ Stroma
+286,76,9,Combined,Stroma
+287,77,8,Combined,Epithelial
+288,78,7,Combined,Endothelial
+289,79,7,Combined,CD8+ T-cells
+290,80,7,Combined,CD163+ Macrophages
+291,81,7,Combined,Regulatory T-cells
+292,82,7,Combined,CD163+ Macrophages
+293,83,6,Combined,Regulatory T-cells
+294,84,6,Combined,Endothelial
+295,85,6,Combined,Macrophages
+296,86,6,Combined,Proliferative Epithelial
+297,87,6,Combined,Epithelial
+298,88,6,Combined,Macrophages
+299,89,6,Combined,aSMA+ Stroma
+300,90,5,Combined,Regulatory T-cells
+301,91,5,Combined,CD8+ T-cells
+302,92,5,Combined,CD8+ T-cells
+303,93,5,Combined,Proliferative Epithelial
+304,94,5,Combined,Proliferative Basal Epithelial
+305,95,5,Combined,Epithelial
+306,96,5,Combined,aSMA+ Stroma
+307,97,5,Combined,Epithelial
+308,98,5,Combined,Macrophages
+309,99,5,Combined,Proliferative Basal Epithelial
+310,100,4,Combined,Endothelial
+311,101,4,Combined,Macrophages
+312,102,4,Combined,Endothelial
+313,103,4,Combined,Macrophages
+314,104,4,Combined,Epithelial
+315,105,4,Combined,CD163+ Macrophages
+316,106,4,Combined,Endothelial
+317,107,4,Combined,CD163+ Macrophages
+318,108,4,Combined,Endothelial
+319,109,4,Combined,CD163+ Macrophages
+320,110,3,Combined,CD163+ Macrophages
+321,111,3,Combined,CD163+ Macrophages
+322,112,3,Combined,aSMA+ Stroma
+323,113,3,Combined,aSMA+ Stroma
+324,114,3,Combined,Regulatory T-cells
+325,115,3,Combined,Endothelial
+326,116,3,Combined,Macrophages
+327,117,3,Combined,Endothelial
+328,118,3,Combined,CD163+ Macrophages
+329,119,3,Combined,Epithelial
+330,120,3,Combined,Macrophages
+331,121,3,Combined,Regulatory T-cells
+332,122,3,Combined,B-cells
+333,123,3,Combined,CD163+ Macrophages
+334,124,3,Combined,Proliferative Epithelial
+335,125,2,Combined,Regulatory T-cells
+336,126,2,Combined,Stroma
+337,127,2,Combined,Epithelial
+338,128,2,Combined,Proliferative Epithelial
+339,129,2,Combined,aSMA+ Stroma
+340,130,2,Combined,Epithelial
+341,131,2,Combined,Myoepithelial
+342,132,2,Combined,Endothelial
+343,133,2,Combined,aSMA+ Stroma
+344,134,2,Combined,aSMA+ Stroma
+345,135,2,Combined,Endothelial
+346,136,2,Combined,Endothelial
+347,137,2,Combined,aSMA+ Stroma
+348,138,2,Combined,CD8+ T-cells
+349,139,2,Combined,Regulatory T-cells
+350,140,2,Combined,Regulatory T-cells
+351,141,2,Combined,Macrophages
+352,142,2,Combined,Endothelial
+353,143,2,Combined,Epithelial
+354,144,2,Combined,Proliferative Epithelial
+355,145,2,Combined,Stroma
+356,146,2,Combined,CD163+ Macrophages
+357,147,2,Combined,CD8+ T-cells
+358,148,2,Combined,CD163+ Macrophages
+359,149,2,Combined,CD163+ Macrophages
+360,150,2,Combined,Macrophages
+361,151,2,Combined,CD163+ Macrophages
+362,152,2,Combined,Macrophages
+363,153,2,Combined,Regulatory T-cells
+364,154,1,Combined,Regulatory T-cells
+365,155,1,Combined,Macrophages
+366,156,1,Combined,Epithelial
+367,157,1,Combined,Endothelial
+368,158,1,Combined,Endothelial
+369,159,1,Combined,Endothelial
+370,160,1,Combined,Proliferative Epithelial
+371,161,1,Combined,CD163+ Macrophages
+372,162,1,Combined,B-cells
+373,163,1,Combined,Epithelial
+374,164,1,Combined,Regulatory T-cells
+375,165,1,Combined,Macrophages
+376,166,1,Combined,Epithelial
+377,167,1,Combined,Macrophages
+378,168,1,Combined,Stroma
+379,169,1,Combined,Stroma
+380,170,1,Combined,Stroma
+381,171,1,Combined,Macrophages
+382,172,1,Combined,Stroma
+383,173,1,Combined,Regulatory T-cells
+384,174,1,Combined,aSMA+ Stroma
+385,175,1,Combined,aSMA+ Stroma
+386,176,1,Combined,Epithelial
+387,177,1,Combined,Macrophages
+388,178,1,Combined,aSMA+ Stroma
+389,179,1,Combined,Epithelial
+390,180,1,Combined,Basal Epithelial
+391,181,1,Combined,Endothelial
+392,182,1,Combined,Macrophages
+393,183,1,Combined,Macrophages
+394,184,1,Combined,CD163+ Macrophages
+395,185,1,Combined,Epithelial
+396,186,1,Combined,Regulatory T-cells
+397,187,1,Combined,Regulatory T-cells
+398,188,1,Combined,Myoepithelial
+399,189,1,Combined,Regulatory T-cells
+400,190,1,Combined,B-cells
+401,191,1,Combined,Proliferative Epithelial
+402,192,1,Combined,Regulatory T-cells
+403,193,1,Combined,aSMA+ Stroma
+404,194,1,Combined,Stroma
+405,195,1,Combined,Stroma
+406,196,1,Combined,B-cells
+407,197,1,Combined,Stroma
+408,198,1,Combined,Regulatory T-cells
+409,199,1,Combined,Regulatory T-cells
+410,200,1,Combined,CD163+ Macrophages
+411,201,1,Combined,Basal Epithelial
+412,202,1,Combined,CD8+ T-cells
+413,203,1,Combined,Regulatory T-cells
+414,204,1,Combined,Proliferative Basal Epithelial
+415,205,1,Combined,Stroma
+416,206,1,Combined,Macrophages
+417,207,1,Combined,Stroma
+418,208,1,Combined,Endothelial
+419,209,1,Combined,aSMA+ Stroma
+420,0,606,Immune,Epithelial
+421,1,561,Immune,Epithelial
+422,2,355,Immune,Proliferative Epithelial
+423,3,331,Immune,Epithelial
+424,4,328,Immune,Epithelial
+425,5,299,Immune,aSMA+ Stroma
+426,6,210,Immune,aSMA+ Stroma
+427,7,190,Immune,Epithelial
+428,8,169,Immune,CD8+ T-cells
+429,9,138,Immune,Macrophages
+430,10,132,Immune,CD163+ Macrophages
+431,11,127,Immune,Epithelial
+432,12,118,Immune,Proliferative Epithelial
+433,13,111,Immune,Epithelial
+434,14,98,Immune,Epithelial
+435,15,94,Immune,Proliferative Epithelial
+436,16,94,Immune,Macrophages
+437,17,94,Immune,Macrophages
+438,18,91,Immune,CD8+ T-cells
+439,19,87,Immune,aSMA+ Stroma
+440,20,80,Immune,Epithelial
+441,21,73,Immune,Epithelial
+442,22,67,Immune,CD163+ Macrophages
+443,23,63,Immune,CD4+ T-cells
+444,24,61,Immune,CD8+ T-cells
+445,25,61,Immune,Macrophages
+446,26,55,Immune,Epithelial
+447,27,52,Immune,Proliferative Epithelial
+448,28,48,Immune,Macrophages
+449,29,48,Immune,aSMA+ Stroma
+450,30,47,Immune,CD163+ Macrophages
+451,31,44,Immune,Epithelial
+452,32,43,Immune,Proliferative Epithelial
+453,33,41,Immune,Regulatory T-cells
+454,34,37,Immune,B-cells
+455,35,36,Immune,Macrophages
+456,36,34,Immune,B-cells
+457,37,32,Immune,aSMA+ Stroma
+458,38,31,Immune,Macrophages
+459,39,28,Immune,Epithelial
+460,40,28,Immune,CD8+ T-cells
+461,41,27,Immune,Macrophages
+462,42,25,Immune,CD163+ Macrophages
+463,43,24,Immune,CD8+ T-cells
+464,44,23,Immune,Proliferative Epithelial
+465,45,22,Immune,CD8+ T-cells
+466,46,22,Immune,Epithelial
+467,47,21,Immune,Macrophages
+468,48,21,Immune,CD8+ T-cells
+469,49,21,Immune,CD4+ T-cells
+470,50,21,Immune,Epithelial
+471,51,19,Immune,aSMA+ Stroma
+472,52,19,Immune,Proliferative Epithelial
+473,53,18,Immune,Proliferative Epithelial
+474,54,18,Immune,CD163+ Macrophages
+475,55,17,Immune,Macrophages
+476,56,16,Immune,CD8+ T-cells
+477,57,16,Immune,Macrophages
+478,58,15,Immune,CD8+ T-cells
+479,59,15,Immune,aSMA+ Stroma
+480,60,15,Immune,B-cells
+481,61,15,Immune,CD163+ Macrophages
+482,62,15,Immune,CD8+ T-cells
+483,63,14,Immune,Epithelial
+484,64,13,Immune,aSMA+ Stroma
+485,65,12,Immune,Macrophages
+486,66,12,Immune,CD8+ T-cells
+487,67,11,Immune,Macrophages
+488,68,11,Immune,Regulatory T-cells
+489,69,11,Immune,CD163+ Macrophages
+490,70,10,Immune,Proliferative Epithelial
+491,71,10,Immune,aSMA+ Stroma
+492,72,10,Immune,Macrophages
+493,73,9,Immune,CD163+ Macrophages
+494,74,9,Immune,Epithelial
+495,75,9,Immune,aSMA+ Stroma
+496,76,9,Immune,Macrophages
+497,77,8,Immune,CD8+ T-cells
+498,78,7,Immune,Macrophages
+499,79,7,Immune,CD8+ T-cells
+500,80,7,Immune,aSMA+ Stroma
+501,81,7,Immune,Regulatory T-cells
+502,82,7,Immune,B-cells
+503,83,6,Immune,CD4+ T-cells
+504,84,6,Immune,B-cells
+505,85,6,Immune,Epithelial
+506,86,6,Immune,Proliferative Epithelial
+507,87,6,Immune,Proliferative Epithelial
+508,88,6,Immune,CD163+ Macrophages
+509,89,6,Immune,Epithelial
+510,90,5,Immune,Regulatory T-cells
+511,91,5,Immune,Regulatory T-cells
+512,92,5,Immune,B-cells
+513,93,5,Immune,Macrophages
+514,94,5,Immune,Epithelial
+515,95,5,Immune,Proliferative Epithelial
+516,96,5,Immune,aSMA+ Stroma
+517,97,5,Immune,Proliferative Epithelial
+518,98,5,Immune,Macrophages
+519,99,5,Immune,Proliferative Epithelial
+520,100,4,Immune,CD4+ T-cells
+521,101,4,Immune,Epithelial
+522,102,4,Immune,Macrophages
+523,103,4,Immune,CD8+ T-cells
+524,104,4,Immune,CD8+ T-cells
+525,105,4,Immune,CD8+ T-cells
+526,106,4,Immune,B-cells
+527,107,4,Immune,Macrophages
+528,108,4,Immune,CD163+ Macrophages
+529,109,4,Immune,Regulatory T-cells
+530,110,3,Immune,B-cells
+531,111,3,Immune,Macrophages
+532,112,3,Immune,Macrophages
+533,113,3,Immune,CD8+ T-cells
+534,114,3,Immune,aSMA+ Stroma
+535,115,3,Immune,Regulatory T-cells
+536,116,3,Immune,Macrophages
+537,117,3,Immune,Epithelial
+538,118,3,Immune,CD8+ T-cells
+539,119,3,Immune,CD8+ T-cells
+540,120,3,Immune,Regulatory T-cells
+541,121,3,Immune,CD4+ T-cells
+542,122,3,Immune,B-cells
+543,123,3,Immune,CD8+ T-cells
+544,124,3,Immune,Macrophages
+545,125,2,Immune,Macrophages
+546,126,2,Immune,Proliferative Epithelial
+547,127,2,Immune,Regulatory T-cells
+548,128,2,Immune,Epithelial
+549,129,2,Immune,B-cells
+550,130,2,Immune,aSMA+ Stroma
+551,131,2,Immune,aSMA+ Stroma
+552,132,2,Immune,CD8+ T-cells
+553,133,2,Immune,CD4+ T-cells
+554,134,2,Immune,CD4+ T-cells
+555,135,2,Immune,CD8+ T-cells
+556,136,2,Immune,CD4+ T-cells
+557,137,2,Immune,Regulatory T-cells
+558,138,2,Immune,Regulatory T-cells
+559,139,2,Immune,CD8+ T-cells
+560,140,2,Immune,CD163+ Macrophages
+561,141,2,Immune,CD8+ T-cells
+562,142,2,Immune,B-cells
+563,143,2,Immune,Macrophages
+564,144,2,Immune,Macrophages
+565,145,2,Immune,CD8+ T-cells
+566,146,2,Immune,B-cells
+567,147,2,Immune,CD8+ T-cells
+568,148,2,Immune,B-cells
+569,149,2,Immune,Macrophages
+570,150,2,Immune,Epithelial
+571,151,2,Immune,aSMA+ Stroma
+572,152,2,Immune,aSMA+ Stroma
+573,153,2,Immune,Regulatory T-cells
+574,154,1,Immune,Macrophages
+575,155,1,Immune,Epithelial
+576,156,1,Immune,Regulatory T-cells
+577,157,1,Immune,aSMA+ Stroma
+578,158,1,Immune,CD8+ T-cells
+579,159,1,Immune,CD4+ T-cells
+580,160,1,Immune,Macrophages
+581,161,1,Immune,aSMA+ Stroma
+582,162,1,Immune,B-cells
+583,163,1,Immune,Macrophages
+584,164,1,Immune,Epithelial
+585,165,1,Immune,CD163+ Macrophages
+586,166,1,Immune,CD8+ T-cells
+587,167,1,Immune,Epithelial
+588,168,1,Immune,CD4+ T-cells
+589,169,1,Immune,CD8+ T-cells
+590,170,1,Immune,Epithelial
+591,171,1,Immune,Epithelial
+592,172,1,Immune,Regulatory T-cells
+593,173,1,Immune,CD4+ T-cells
+594,174,1,Immune,CD8+ T-cells
+595,175,1,Immune,Epithelial
+596,176,1,Immune,Regulatory T-cells
+597,177,1,Immune,Macrophages
+598,178,1,Immune,aSMA+ Stroma
+599,179,1,Immune,Macrophages
+600,180,1,Immune,Epithelial
+601,181,1,Immune,Regulatory T-cells
+602,182,1,Immune,CD163+ Macrophages
+603,183,1,Immune,CD4+ T-cells
+604,184,1,Immune,Regulatory T-cells
+605,185,1,Immune,Proliferative Epithelial
+606,186,1,Immune,B-cells
+607,187,1,Immune,CD163+ Macrophages
+608,188,1,Immune,aSMA+ Stroma
+609,189,1,Immune,Epithelial
+610,190,1,Immune,aSMA+ Stroma
+611,191,1,Immune,Proliferative Epithelial
+612,192,1,Immune,CD163+ Macrophages
+613,193,1,Immune,CD4+ T-cells
+614,194,1,Immune,Regulatory T-cells
+615,195,1,Immune,Proliferative Epithelial
+616,196,1,Immune,Regulatory T-cells
+617,197,1,Immune,B-cells
+618,198,1,Immune,aSMA+ Stroma
+619,199,1,Immune,CD4+ T-cells
+620,200,1,Immune,aSMA+ Stroma
+621,201,1,Immune,Regulatory T-cells
+622,202,1,Immune,Macrophages
+623,203,1,Immune,CD8+ T-cells
+624,204,1,Immune,aSMA+ Stroma
+625,205,1,Immune,Epithelial
+626,206,1,Immune,aSMA+ Stroma
+627,207,1,Immune,aSMA+ Stroma
+628,208,1,Immune,Epithelial
+629,209,1,Immune,Macrophages

@@ -1,0 +1,33 @@
+cluster,cell_type,cell_type_refined
+26,Epithelial,Epithelial
+11,Epithelial,Epithelial
+24,Epithelial,Epithelial
+22,Epithelial,Proliferative Epithelial
+2,Epithelial,Proliferative Basal Epithelial
+20,Epithelial,Proliferative Epithelial
+15,Epithelial,Proliferative Basal Epithelial
+19,Epithelial,Proliferative Basal Epithelial
+18,Epithelial,Proliferative Basal Epithelial
+23,Epithelial,Epithelial
+7,Epithelial,Epithelial
+28,Epithelial,Basal Epithelial
+14,Epithelial,Basal Epithelial
+4,Epithelial,Basal Epithelial
+12,Epithelial,Basal Epithelial
+25,Epithelial,Basal Epithelial
+17,Epithelial,Basal Epithelial
+30,Epithelial,Proliferative Epithelial
+21,Epithelial,Proliferative Epithelial
+1,Epithelial,Proliferative Epithelial
+6,Stroma,aSMA+ Stroma
+5,Stroma,aSMA+ Stroma
+10,Stroma,aSMA+ Stroma
+3,Endothelial,Endothelial
+16,Stroma,aSMA+ Stroma
+29,Lymphoid,T-cells
+9,Lymphoid,T-cells
+8,Lymphoid,T-cells
+0,Endothelial,Endothelial
+13,Endothelial,Endothelial
+31,Myoepithelial,Myoepithelial
+27,Stroma,aSMA+ Stroma
