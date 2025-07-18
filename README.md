@@ -11,7 +11,7 @@ Multiplexed tissue imaging (MTI) and other spatial profiling technologies common
 ## Installation
 ```
 git clone https://github.com/heussner/coexist.git
-conda create -n coexist -c conda-forge python=3.9 jupyter scikit-image scikit-learn tifffile pandas tqdm matplotlib
+conda create -n coexist-minimal -c conda-forge python=3.9 jupyter scikit-image scikit-learn tifffile pandas tqdm matplotlib
 conda activate coexist
 ```
 
